@@ -1,0 +1,138 @@
+export const RUBRO_MODULES: Record<string, any> = {
+  ropa: {
+    nombre: 'Ropa, Calzado y Accesorios',
+    emoji: '👕',
+    modulos: [
+      {
+        id: 'tienda_virtual',
+        nombre: 'Tienda Virtual',
+        icono: '🛍️',
+        descripcion: 'Marketplace con probador AR',
+        premium: true,
+      },
+      {
+        id: 'probador_ar',
+        nombre: 'Probador Virtual AR',
+        icono: '📷',
+        descripcion: 'Pruébate ropa en tiempo real',
+        premium: true,
+      },
+      {
+        id: 'colecciones',
+        nombre: 'Gestionar Colecciones',
+        icono: '🎨',
+        descripcion: 'Por temporada o línea',
+        premium: false,
+      },
+      {
+        id: 'atributos_ropa',
+        nombre: 'Tallas y Colores',
+        icono: '🎯',
+        descripcion: 'Gestión de variantes',
+        premium: false,
+      },
+    ],
+  },
+  abarrotes: {
+    nombre: 'Abarrotes / Bodega',
+    emoji: '🛒',
+    modulos: [
+      {
+        id: 'vencimientos',
+        nombre: 'Control de Vencimientos',
+        icono: '⏰',
+        descripcion: 'Alertas automáticas',
+        premium: false,
+      },
+      {
+        id: 'codigos_barras',
+        nombre: 'Lector de Códigos',
+        icono: '📷',
+        descripcion: 'Escaneo rápido',
+        premium: false,
+      },
+      {
+        id: 'credito_fio',
+        nombre: 'Ventas a Crédito',
+        icono: '📝',
+        descripcion: 'Control de "fío"',
+        premium: false,
+      },
+      {
+        id: 'lotes',
+        nombre: 'Gestión de Lotes',
+        icono: '📦',
+        descripcion: 'Rastreo por lote',
+        premium: false,
+      },
+    ],
+  },
+  papa_mayorista: {
+    nombre: 'Papa / Mayorista',
+    emoji: '🥔',
+    modulos: [
+      {
+        id: 'venta_peso',
+        nombre: 'Venta por Peso',
+        icono: '⚖️',
+        descripcion: 'Kg, Sacos, Toneladas',
+        premium: false,
+      },
+      {
+        id: 'cuentas_cobrar',
+        nombre: 'Cuentas por Cobrar',
+        icono: '💳',
+        descripcion: 'Control de créditos',
+        premium: false,
+      },
+      {
+        id: 'pedidos_proveedores',
+        nombre: 'Pedidos a Proveedores',
+        icono: '🚚',
+        descripcion: 'Órdenes de compra',
+        premium: false,
+      },
+      {
+        id: 'analisis_precios',
+        nombre: 'Análisis de Precios',
+        icono: '📊',
+        descripcion: 'Histórico y tendencias',
+        premium: true,
+      },
+    ],
+  },
+  electronica: {
+    nombre: 'Electrónica y Tecnología',
+    emoji: '📱',
+    modulos: [
+      {
+        id: 'numeros_serie',
+        nombre: 'Números de Serie',
+        icono: '🔢',
+        descripcion: 'Control de IMEI/Serie',
+        premium: false,
+      },
+      {
+        id: 'garantias',
+        nombre: 'Control de Garantías',
+        icono: '🛡️',
+        descripcion: 'Seguimiento de garantías',
+        premium: false,
+      },
+      {
+        id: 'servicio_tecnico',
+        nombre: 'Servicio Técnico',
+        icono: '🔧',
+        descripcion: 'Órdenes de reparación',
+        premium: true,
+      },
+      {
+        id: 'especificaciones',
+        nombre: 'Especificaciones',
+        icono: '📋',
+        descripcion: 'Detalles técnicos',
+        premium: false,
+      },
+    ],
+  },
+};

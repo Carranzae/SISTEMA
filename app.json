@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "OmniTienda BPM",
+    "slug": "omnitienda-bpm",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "pe.omnitienda.bpm",
+      "infoPlist": {
+        "NSCameraUsageDescription": "OmniTienda necesita acceso a la cámara para escanear códigos de barras y el probador virtual AR",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceso a tu galería para subir fotos de productos",
+        "NSUserNotificationUsageDescription": "Recibe notificaciones importantes sobre tu negocio"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "pe.omnitienda.bpm",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "OmniTienda necesita acceso a la cámara para escanear códigos de barras y probador virtual"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permite subir fotos de productos",
+          "savePhotosPermission": "Permitir guardar comprobantes",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2563EB"
+        }
+      ]
+    ]
+  }
+}

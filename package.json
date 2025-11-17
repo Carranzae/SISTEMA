@@ -1,0 +1,91 @@
+{
+  "name": "omnitienda-bpm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Software Multi-Negocio Inteligente para PyMEs Perú",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "type-check": "tsc --noEmit",
+    "build": "tsc",
+    "prebuild": "expo prebuild"
+  },
+  "dependencies": {
+    "expo": "^50.0.0",
+    "expo-camera": "^13.4.0",
+    "expo-constants": "^14.4.0",
+    "expo-file-system": "^15.2.0",
+    "expo-media-library": "^15.3.0",
+    "expo-notifications": "^0.20.0",
+    "expo-router": "^3.4.0",
+    "expo-sharing": "^12.0.0",
+    "react": "18.2.0",
+    "react-native": "0.73.0",
+    "react-native-document-picker": "^9.1.1",
+    "react-native-gesture-handler": "^2.14.0",
+    "react-native-safe-area-context": "^4.8.0",
+    "react-native-screens": "^3.27.0",
+    "react-native-svg": "^13.14.0",
+    "@react-navigation/bottom-tabs": "^6.5.11",
+    "@react-navigation/native": "^6.1.9",
+    "@react-native-camera-roll/camera-roll": "^5.7.0",
+    "@supabase/auth-helpers-react-native": "^0.1.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0",
+    "lottie-react-native": "^6.4.1",
+    "qrcode": "^1.5.3",
+    "qrcode.react": "^1.0.1",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@testing-library/react-native": "^12.4.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.42",
+    "@types/react-native": "^0.73.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0"
+  },
+  "expo": {
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "OmniTienda necesita acceso a la cámara para escanear códigos de barras y probador virtual"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permite subir fotos de productos",
+          "savePhotosPermission": "Permitir guardar comprobantes",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2563EB",
+          "sounds": [
+            "./assets/notification-sound.wav"
+          ]
+        }
+      ]
+    ]
+  }
+}
