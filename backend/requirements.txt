@@ -8,7 +8,7 @@ python-multipart==0.0.6
 Pillow==10.1.0
 opencv-python==4.8.1.78
 numpy==1.26.2
-mediapipe==0.10.5
+mediapipe==0.10.13
 boto3==1.29.7
 aiofiles==23.2.1
 pytest==7.4.3
