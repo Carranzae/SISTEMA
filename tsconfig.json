@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForModuleExports": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "jsx": "react-native",
     "module": "ESNext",
     "moduleResolution": "node",
@@ -18,15 +21,33 @@
     "outDir": "./lib",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@components/*": ["./src/components/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@services/*": ["./src/services/*"],
-      "@types/*": ["./src/types/*"],
-      "@store/*": ["./src/store/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@theme/*": ["./src/theme/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@screens/*": [
+        "./src/screens/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@theme/*": [
+        "./src/theme/*"
+      ]
     },
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
@@ -34,6 +55,15 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["index.js", "src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts", "dist"]
+  "include": [
+    "index.js",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "dist"
+  ],
+  "extends": "expo/tsconfig.base"
 }

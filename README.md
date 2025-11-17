@@ -190,15 +190,15 @@ npm run lint
 omnitienda-bpm
 ├── backend
 │   ├── app
-│   ├── tests
+│   ├── supabase
 │   ├── Dockerfile
 │   └── requirements.txt
-├── mobile
-│   ├── assets
-│   ├── src
-│   ├── App.tsx
-│   ├── app.json
-│   └── package.json
+├── src
+│   ├── app
+│   ├── components
+│   └── screens
+├── app.json
+├── package.json
 └── README.md
 ```
 
